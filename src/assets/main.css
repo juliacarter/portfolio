@@ -1,0 +1,69 @@
+@import './base.css';
+
+#app {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+}
+
+html {
+  overflow: hidden !important;
+}
+
+.v-row {
+  margin: 0px !important;
+}
+
+.bordered-image  img {
+  border: 15px solid rgb(var(--v-theme-primary));
+  max-height: 88vh !important;
+  width: auto !important;
+}
+.v-col {
+  padding: 0px !important
+}
+
+.item {
+  padding: 5px;
+}
+
+.content {
+  padding: 2vh 5vh 2vh 5vh;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100%;
+  flex-grow: 1;
+  color: black;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+#element::-webkit-scrollbar {
+  display: none;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+    overflow: hidden;
+  }
+
+  #app {
+    display: grid;
+  }
+}
